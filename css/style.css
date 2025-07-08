@@ -1,0 +1,101 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #faf7f2;
+    color: #333;
+}
+
+.luxury-font {
+    font-family: 'Playfair Display', serif;
+}
+
+.preloader {
+    position: fixed;
+    inset: 0;
+    background-color: white;
+    z-index: 9999;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.preloader-spinner {
+    width: 5rem;
+    height: 5rem;
+    color: #D4AF37;
+    animation: spin 1s linear infinite;
+}
+
+.hero-section {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), 
+                url('https://images.unsplash.com/photo-1602173574767-37ac01994b2a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    min-height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+}
+
+.diamond-shape {
+    clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.gold-text {
+    background: linear-gradient(to right, #D4AF37, #F5D98B, #D4AF37);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.nav-link:after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 2px;
+    background: #D4AF37;
+    transition: width .3s;
+}
+
+.nav-link:hover:after {
+    width: 100%;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+.animate-float {
+    animation: float 6s ease-in-out infinite;
+}
+
+.scroll-opacity {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease-out;
+}
+
+.scroll-opacity.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+@media (max-width: 768px) {
+    .hero-section {
+        height: auto;
+        padding: 8rem 0;
+    }
+    
+    .diamond-shape {
+        width: 6rem;
+        height: 6rem;
+    }
+}

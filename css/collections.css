@@ -1,0 +1,42 @@
+.collection-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), 
+        url('https://images.unsplash.com/photo-1605100804763-247f67b3557e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.product-card {
+    transition: all 0.3s ease;
+    overflow: hidden;
+}
+        
+.product-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+}
+        
+.product-image {
+    transition: transform 0.5s ease;
+}
+        
+.product-card:hover .product-image {
+    transform: scale(1.05);
+}
+
+.price-tag {
+    background: linear-gradient(135deg, #D4AF37, #F5D98B);
+    color: #333;
+}
+        
+.filter-btn.active {
+    background-color: #333;
+    color: #F5D98B;
+}
+
+.luxury-font {
+    font-family: 'Playfair Display', serif;
+}
