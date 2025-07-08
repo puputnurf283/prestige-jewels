@@ -16,7 +16,7 @@ A landing page and collection showcase for an exclusive jewelry brand.
 
 ## 📍 Preview
 
-[Live Demo](https://yourdeploymentlink.com)
+[Live Demo]([https://puputnurf283.github.io/prestige-jewels/])
 
 ## 📁 Folder Structure
 
