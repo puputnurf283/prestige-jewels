@@ -1,4 +1,5 @@
-const filterButtons = document.querySelectorAll('.filter-btn');
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButtons = document.querySelectorAll('.filter-btn');
     const productCards = document.querySelectorAll('.product-card');
         
     filterButtons.forEach(button => {
@@ -19,7 +20,7 @@ const filterButtons = document.querySelectorAll('.filter-btn');
             });
         });
     });
-        
+
     // Add to cart functionality
     const addToCartButtons = document.querySelectorAll('.add-to-cart');
         
@@ -48,3 +49,4 @@ const filterButtons = document.querySelectorAll('.filter-btn');
             }, 3000);
         });
     });
+});
